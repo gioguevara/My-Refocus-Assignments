@@ -1,7 +1,7 @@
 let height = 1.73
-let weight = 68
+let weight = 61
 
-function calculateBMI(){
+const calculateBMI = ()=>{
     let bmi = weight / (height * height);
     if (bmi < 18.5) {
         console.log(bmi + " - Underweight");
@@ -19,3 +19,5 @@ function calculateBMI(){
 }
 
 calculateBMI()
+
+module.exports = calculateBMI;
